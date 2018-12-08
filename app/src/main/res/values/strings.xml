@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuantumCalc</string>
+    <string name="alphaReal">alpha-real</string>
+    <string name="alphaImg">alpha-img</string>
+    <string name="betaReal">beta-real</string>
+    <string name="betaImg">beta-img</string>
+    <string name="calculate">Calculate</string>
+    <string name="next">Next</string>
+    <string name="bitFlip">BitFlip</string>
+    <string name="hadamard">Hadamard</string>
+    <string name="cNot">CNOT</string>
+</resources>
