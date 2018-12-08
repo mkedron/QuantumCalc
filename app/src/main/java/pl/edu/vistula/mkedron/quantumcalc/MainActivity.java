@@ -32,7 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
     private Float getFloatValue(int id) {
         EditText field = (EditText) findViewById(id);
-
-        return Float.valueOf(field.getText().toString());
+        String textValue = field.getText().toString();
+        try {
+            return Float.valueOf(field.getText().toString());
+        } catch(Exception e) {
+            return new Float(0);
+        }
     }
 }

@@ -6,62 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/alpha-real"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/alphaReal"
         android:ems="10"
+        android:hint="@string/alphaReal"
         android:inputType="number"
-        android:text="@string/alphaReal"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="26dp" />
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/alpha-img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/alpha-img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/alphaReal"
         android:ems="10"
+        android:hint="@string/alphaReal"
         android:inputType="number"
-        android:text="@string/alphaImg"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="82dp" />
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/beta-real"
+        app:layout_constraintEnd_toEndOf="@+id/alpha-real"
+        app:layout_constraintTop_toBottomOf="@+id/alpha-real" />
 
     <EditText
         android:id="@+id/beta-real"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="11dp"
+        android:contentDescription="@string/alphaReal"
         android:ems="10"
+        android:hint="@string/alphaReal"
         android:inputType="number"
-        android:text="@string/betaReal"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="136dp" />
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/beta-img"
+        app:layout_constraintStart_toStartOf="@+id/alpha-img"
+        app:layout_constraintTop_toBottomOf="@+id/alpha-img" />
 
     <EditText
         android:id="@+id/beta-img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/alphaReal"
         android:ems="10"
+        android:hint="@string/alphaReal"
         android:inputType="number"
-        android:text="@string/betaImg"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="193dp" />
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/beta-real"
+        app:layout_constraintTop_toBottomOf="@+id/beta-real" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="254dp"
-        android:layout_height="51dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="171dp"
         android:onClick="nextListener"
         android:text="@string/next"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beta-img"
+        tools:layout_editor_absoluteX="27dp" />
 
 </android.support.constraint.ConstraintLayout>
